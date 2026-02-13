@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Tuple
+from typing import Optional, Tuple
 
 from .scaling import scale_patch_size
 
@@ -31,9 +31,10 @@ class ModelConfig:
 
 def build_default_configuration(
     target_cell_size: Tuple[float, float, float],
-    reference: ModelReference = ModelReference(),
+    reference: Optional[ModelReference] = None,
 ) -> ModelConfig:
     """Build a DL4-style RCNN-LAM config for a target 3D grid spacing."""
+    reference = reference or ModelReference()
 
     patch_size = scale_patch_size(
         reference_patch_size=reference.reference_patch_size,

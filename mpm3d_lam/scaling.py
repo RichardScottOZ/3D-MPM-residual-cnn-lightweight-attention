@@ -1,12 +1,12 @@
 from __future__ import annotations
 
-from typing import Iterable, Tuple
+from typing import Any, Iterable, Tuple, Type
 
 Int3 = Tuple[int, int, int]
 Float3 = Tuple[float, float, float]
 
 
-def _as_tuple3(values: Iterable[float], value_type: type) -> tuple:
+def _as_tuple3(values: Iterable[float], value_type: Type) -> Tuple[Any, Any, Any]:
     seq = tuple(values)
     if len(seq) != 3:
         raise ValueError("Expected exactly 3 values for a 3D shape/spacing.")
