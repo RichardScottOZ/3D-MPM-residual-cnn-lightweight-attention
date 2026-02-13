@@ -3,6 +3,29 @@
 Generalised framework implementation of the paper:
 **Three-dimensional mineral prospectivity mapping using a residual convolutional neural network with lightweight attention mechanisms** (Ore Geology Reviews, 2025).
 
+## Citation
+
+This code implements the methodology described in:
+
+**Zhang, Z., Wang, G., Carranza, E. J. M., Li, W., Li, Y., Tang, L., & Liu, X. (2025).** Three-dimensional mineral prospectivity mapping using a residual convolutional neural network with lightweight attention mechanisms. *Ore Geology Reviews*, 177, 106797. https://doi.org/10.1016/j.oregeorev.2025.106797
+
+The paper is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), which allows sharing and adaptation with appropriate attribution.
+
+### BibTeX
+
+```bibtex
+@article{zhang2025threedimensional,
+  title={Three-dimensional mineral prospectivity mapping using a residual convolutional neural network with lightweight attention mechanisms},
+  author={Zhang, Zhiqiang and Wang, Gongwen and Carranza, Emmanuel John M. and Li, Wei and Li, Yingjie and Tang, Li and Liu, Xinxing},
+  journal={Ore Geology Reviews},
+  volume={177},
+  pages={106797},
+  year={2025},
+  publisher={Elsevier},
+  doi={10.1016/j.oregeorev.2025.106797}
+}
+```
+
 ## What is included
 
 - `mpm3d_lam` Python package with:
