@@ -8,7 +8,7 @@ Int3 = Tuple[int, int, int]
 Float3 = Tuple[float, float, float]
 
 
-def _as_tuple3(values: Iterable[float], value_type: type) -> tuple:
+def _as_tuple3(values: Iterable[float], value_type: type) -> Tuple:
     """Convert an iterable to a 3-element tuple with the given element type.
 
     Raises ``ValueError`` when the iterable does not contain exactly three
